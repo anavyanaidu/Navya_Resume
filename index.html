@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Navya - Java Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">A NAVYA</span>
+                <span class="logo-subtitle">Java Developer</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typing-text">Hi, I'm A Navya</span>
+                </h1>
+                <h2 class="hero-subtitle">Senior Java Developer</h2>
+                <p class="hero-description">
+                    Passionate backend engineer with 4+ years of experience building scalable microservices 
+                    and distributed systems at Walmart, Rakuten, and Wipro.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="4">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="1000000">0</span>
+                        <span class="stat-label">Line Orders Scaled</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Awards Won</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#experience" class="btn btn-primary">View Experience</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-animation">
+                    <div class="code-line">
+                        <span class="keyword">@RestController</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="keyword">public class</span> <span class="class-name">OrderController</span> {
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;<span class="annotation">@PostMapping</span>(<span class="string">"/orders"</span>)
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;<span class="keyword">public</span> ResponseEntity createOrder() {
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Scalable microservice logic</span>
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;}
+                    </div>
+                    <div class="code-line">
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a dedicated Java developer currently working as Software Engineer III at Walmart Global Tech, 
+                        with a proven track record of building enterprise-scale applications and leading feature development.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>Scale Expert</h4>
+                                <p>Led system expansion from 100 to 1 million line orders</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-cogs"></i>
+                            <div>
+                                <h4>Microservices Architect</h4>
+                                <p>Designed scalable APIs and microservice architectures</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Security Focused</h4>
+                                <p>Resolved critical vulnerabilities and improved code health</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="info-card">
+                        <h3>Quick Info</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bangalore, KA, India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>anavyanaidu@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-7330806550</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineer III</h3>
+                            <span class="company">Walmart Global Tech</span>
+                            <span class="duration">01/2025 - Present</span>
+                        </div>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Resolved critical vulnerabilities and improved code health by addressing Snyk issues</li>
+                                <li>Built scalable systems for campaign, ad group, and creative management</li>
+                                <li>Migrated alerts from Splunk to Open Observe</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Kafka</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Kubernetes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineer</h3>
+                            <span class="company">Rakuten India Enterprise</span>
+                            <span class="duration">06/2024 - 12/2024</span>
+                        </div>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Led development of Order Management Service for MNO B2B BSS system</li>
+                                <li>Scaled business from 100 line orders to 1 million in two years</li>
+                                <li>Developed real-time analytics dashboard using Spring Boot</li>
+                                <li>Enhanced system metrics with ELK stack integration</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Couchbase</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">ELK Stack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Associate Software Engineer</h3>
+                            <span class="company">Rakuten Symphony</span>
+                            <span class="duration">09/2022 - 06/2024</span>
+                        </div>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Contributed to Java-based backend development</li>
+                                <li>Designed and implemented scalable APIs</li>
+                                <li>Contributed to microservice architecture refactoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Project Engineer</h3>
+                            <span class="company">Wipro Limited</span>
+                            <span class="duration">03/2021 - 08/2022</span>
+                        </div>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Developed BRECO Service for FEDEX system</li>
+                                <li>Built and deployed multiple microservices</li>
+                                <li>Designed REST APIs within component-based architecture</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">REST</span>
+                                <span class="tech-tag">Jenkins</span>
+                                <span class="tech-tag">PCF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">Spring Boot</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">Microservices</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">NoSQL</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">Kubernetes</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">Kafka</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Testing & Quality</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span class="skill-name">Unit Testing</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">CI/CD</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">SonarQube</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Order Management System</h3>
+                        <span class="project-type">Enterprise System</span>
+                    </div>
+                    <p class="project-description">
+                        Led development of scalable Order Management Service for MNO B2B BSS system, 
+                        scaling from 100 to 1 million line orders.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Microservices</span>
+                        <span class="tech-tag">Kafka</span>
+                    </div>
+                    <div class="project-achievements">
+                        <div class="achievement">
+                            <i class="fas fa-chart-line"></i>
+                            <span>10000x Scale Improvement</span>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>High Availability</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Real-time Analytics Dashboard</h3>
+                        <span class="project-type">Data Platform</span>
+                    </div>
+                    <p class="project-description">
+                        Developed real-time analytics dashboard using Spring Boot for data-driven 
+                        management decisions with ELK stack integration.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">ELK Stack</span>
+                        <span class="tech-tag">Real-time</span>
+                        <span class="tech-tag">Analytics</span>
+                    </div>
+                    <div class="project-achievements">
+                        <div class="achievement">
+                            <i class="fas fa-clock"></i>
+                            <span>Real-time Processing</span>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Business Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Fertilizer Website</h3>
+                        <span class="project-type">Commercial Site</span>
+                    </div>
+                    <p class="project-description">
+                        Full-stack commercial website for local fertilizer business with 
+                        modern UI/UX and responsive design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://sri-vinayaka-rythu-depot.netlify.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Live Site
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="awards">
+        <div class="container">
+            <h2 class="section-title">Honors & Awards</h2>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Best Performer Q1 2024</h3>
+                    <p>Rakuten Symphony</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Best Performer Q4 2022</h3>
+                    <p>Wipro Limited</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Best Performer Q3 2021</h3>
+                    <p>Wipro Limited</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>
+                        I'm always interested in new opportunities and exciting projects. 
+                        Let's discuss how we can work together!
+                    </p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:anavyanaidu@gmail.com">anavyanaidu@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+917330806550">+91-7330806550</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Bangalore, KA, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>A Navya</h3>
+                    <p>Senior Java Developer passionate about building scalable systems</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:anavyanaidu@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+917330806550"><i class="fas fa-phone"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 A Navya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
