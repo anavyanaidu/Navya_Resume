@@ -122,7 +122,7 @@ export class GameEngine {
   }
 
   private handlePlatformCollisions() {
-    if (!this.level) return;
+    if (!this.level || !this.level.platforms) return;
 
     this.player.grounded = false;
 
@@ -201,7 +201,7 @@ export class GameEngine {
   }
 
   checkHazardCollision(): boolean {
-    if (!this.level) return false;
+    if (!this.level || !this.level.hazards) return false;
 
     for (const hazard of this.level.hazards) {
       const distance = Math.sqrt(
@@ -250,9 +250,11 @@ export class GameEngine {
     this.ctx.strokeStyle = "#2d3748";
     this.ctx.lineWidth = 2;
     
-    for (const platform of this.level.platforms) {
-      this.ctx.fillRect(platform.x, platform.y, platform.width, platform.height);
-      this.ctx.strokeRect(platform.x, platform.y, platform.width, platform.height);
+    if (this.level.platforms) {
+      for (const platform of this.level.platforms) {
+        this.ctx.fillRect(platform.x, platform.y, platform.width, platform.height);
+        this.ctx.strokeRect(platform.x, platform.y, platform.width, platform.height);
+      }
     }
 
     // Draw collectibles

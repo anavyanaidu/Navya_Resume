@@ -11,6 +11,7 @@ export function GameCanvas() {
   const { 
     gamePhase, 
     currentLevel, 
+    level,
     playerPosition, 
     collectibles, 
     score, 
@@ -161,12 +162,12 @@ export function GameCanvas() {
 
   // Update engine with current game state
   useEffect(() => {
-    if (gameEngineRef.current) {
-      gameEngineRef.current.setLevel(currentLevel);
+    if (gameEngineRef.current && level) {
+      gameEngineRef.current.setLevel(level);
       gameEngineRef.current.setCollectibles(collectibles);
       gameEngineRef.current.setPlayerPosition(playerPosition);
     }
-  }, [currentLevel, collectibles, playerPosition]);
+  }, [level, collectibles, playerPosition]);
 
   // Handle canvas resize
   useEffect(() => {
