@@ -1226,12 +1226,12 @@ section {
                 </h1>
                 <h2 class="hero-subtitle">Senior Java Developer</h2>
                 <p class="hero-description">
-                    Passionate backend engineer with 4+ years of experience building scalable microservices 
+                    Passionate backend engineer with 5+ years of experience building scalable microservices 
                     and distributed systems at Walmart, Rakuten, and Wipro.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number" data-target="4">4</span>
+                        <span class="stat-number" data-target="5">5</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat">
@@ -1239,7 +1239,7 @@ section {
                         <span class="stat-label">Line Orders Scaled</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number" data-target="3">3</span>
+                        <span class="stat-number" data-target="5">5</span>
                         <span class="stat-label">Awards Won</span>
                     </div>
                 </div>
@@ -1350,9 +1350,13 @@ section {
                         </div>
                         <div class="timeline-description">
                             <ul>
-                                <li>Resolved critical vulnerabilities and improved code health by addressing Snyk issues</li>
-                                <li>Built scalable systems for campaign, ad group, and creative management</li>
+                                <li>Resolved critical vulnerabilities and improved code health by addressing Snyk issues and increasing SonarQube coverage across key modules</li>
+                                <li>Built and maintained scalable systems for campaign, ad group, and creative management across auction, sponsorship, and house ad types</li>
                                 <li>Migrated alerts from Splunk to Open Observe</li>
+                                <li>Migrated crons and scheduler services to app-to-app (service mesh) authentication across dev, stage and prod</li>
+                                <li>Replaced hard-coded CAP enums with dynamic, config-driven inventory using feature flags and V1/V2 targeting compatibility</li>
+                                <li>Automated TMT tag approval from URL-moderation status in cron jobs, cutting manual review and TMT submissions</li>
+                                <li>Implemented Debezium/Kafka CDC change events for campaign and line-item data; integrated IMS for forecasting and bid recommendations</li>
                             </ul>
                             <div class="tech-stack">
                                 <span class="tech-tag">Java</span>
@@ -1360,6 +1364,12 @@ section {
                                 <span class="tech-tag">Kafka</span>
                                 <span class="tech-tag">MySQL</span>
                                 <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">Debezium</span>
+                                <span class="tech-tag">CDC</span>
+                                <span class="tech-tag">Open Observe</span>
+                                <span class="tech-tag">Splunk</span>
+                                <span class="tech-tag">Snyk</span>
+                                <span class="tech-tag">JUnit</span>
                             </div>
                         </div>
                     </div>
@@ -1375,16 +1385,21 @@ section {
                         </div>
                         <div class="timeline-description">
                             <ul>
-                                <li>Led development of Order Management Service for MNO B2B BSS system</li>
+                                <li>Led development of Order Management Service for MNO B2B BSS system, from requirements and partner dependencies through implementation, testing, metrics, monitors and dashboards</li>
                                 <li>Scaled business from 100 line orders to 1 million in two years</li>
+                                <li>Refactored Order Management and its wrapper services for high availability and improved fault tolerance</li>
                                 <li>Developed real-time analytics dashboard using Spring Boot</li>
                                 <li>Enhanced system metrics with ELK stack integration</li>
+                                <li>CI/CD pipeline integration, code reviews, load/stress testing and unit/integration/E2E testing</li>
                             </ul>
                             <div class="tech-stack">
                                 <span class="tech-tag">Java</span>
                                 <span class="tech-tag">Spring Boot</span>
                                 <span class="tech-tag">Couchbase</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Kafka</span>
                                 <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
                                 <span class="tech-tag">ELK Stack</span>
                             </div>
                         </div>
@@ -1404,7 +1419,17 @@ section {
                                 <li>Contributed to Java-based backend development</li>
                                 <li>Designed and implemented scalable APIs</li>
                                 <li>Contributed to microservice architecture refactoring</li>
+                                <li>Led microservice architecture development as the business grew from 100 to 1 million line orders</li>
                             </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Couchbase</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Kafka</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1476,6 +1501,12 @@ section {
                             </div>
                         </div>
                         <div class="skill-bar">
+                            <span class="skill-name">Couchbase</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="80" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
                             <span class="skill-name">NoSQL</span>
                             <div class="skill-progress">
                                 <div class="skill-percentage" data-percentage="80" style="width: 80%;"></div>
@@ -1501,6 +1532,12 @@ section {
                         </div>
                         <div class="skill-bar">
                             <span class="skill-name">Kubernetes</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="80" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">Debezium (CDC)</span>
                             <div class="skill-progress">
                                 <div class="skill-percentage" data-percentage="80" style="width: 80%;"></div>
                             </div>
@@ -1537,6 +1574,66 @@ section {
                         </div>
                     </div>
                 </div>
+
+                <div class="skill-category">
+                    <h3>Observability &amp; Security</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span class="skill-name">Splunk</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="85" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">OpenObserve</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="80" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">Snyk</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="85" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">Feature Flags</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="85" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Core Engineering</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span class="skill-name">System Design</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="85" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">Distributed Systems</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="85" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">Data Structures &amp; Algorithms</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="88" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">OOP</span>
+                            <div class="skill-progress">
+                                <div class="skill-percentage" data-percentage="92" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1546,6 +1643,34 @@ section {
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Ad Platform: Campaign &amp; Creative Management</h3>
+                        <span class="project-type">Walmart Global Tech</span>
+                    </div>
+                    <p class="project-description">
+                        Scalable campaign, ad group and creative management across auction, sponsorship and house ad types,
+                        with Debezium/Kafka CDC events and IMS-powered forecasting and bid recommendations.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Kafka</span>
+                        <span class="tech-tag">Debezium</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-achievements">
+                        <div class="achievement">
+                            <i class="fas fa-bullhorn"></i>
+                            <span>CDC Event Streaming</span>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-toggle-on"></i>
+                            <span>Feature-flagged Rollouts</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Order Management System</h3>
@@ -1631,6 +1756,20 @@ section {
         <div class="container">
             <h2 class="section-title">Honors & Awards</h2>
             <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Bravo Award Q2 2026</h3>
+                    <p>Walmart Global Tech</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Best Performer Q3 2025</h3>
+                    <p>Walmart Global Tech</p>
+                </div>
                 <div class="award-card">
                     <div class="award-icon">
                         <i class="fas fa-trophy"></i>
@@ -1723,12 +1862,11 @@ section {
                 <div class="footer-links">
                     <a href="mailto:anavyanaidu@gmail.com"><i class="fas fa-envelope"></i></a>
                     <a href="tel:+917330806550"><i class="fas fa-phone"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/a-navya-147224183" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 A Navya. All rights reserved.</p>
+                <p>&copy; 2026 A Navya. All rights reserved.</p>
             </div>
         </div>
     </footer>
